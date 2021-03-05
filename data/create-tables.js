@@ -21,7 +21,7 @@ async function run() {
                     id SERIAL PRIMARY KEY NOT NULL,
                     yelp_id VARCHAR(256) NOT NULL,
                     name VARCHAR(512) NOT NULL,
-                    image_url VARCHAR(512),
+                    image_url VARCHAR(512) NOT NULL,
                     rating VARCHAR(512) NOT NULL,
                     user_id INTEGER NOT NULL REFERENCES users(id)
             );
